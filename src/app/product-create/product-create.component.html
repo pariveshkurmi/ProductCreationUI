@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>Product Creation Form</h2>
+    <form [formGroup]="productForm">
+      <div class="form-group">
+        <label for="email">Product Name:</label>
+        <input type="text" class="form-control" id="email" formControlName="productName" placeholder="Enter Product Name" >
+      </div>
+      <div class="form-group">
+        <label for="pwd">Size:</label>
+        <input type="text" class="form-control" id="pwd" formControlName="size" placeholder="Enter Size" >
+      </div>
+      <div class="form-group">
+        <label for="pwd">Color:</label>
+        <input type="text" class="form-control" id="pwd" formControlName="color" placeholder="Enter Color" >
+      </div>
+      <div class="form-group">
+        <label for="pwd">Brand:</label>
+        <input type="text" class="form-control" id="pwd" formControlName="brand" placeholder="Enter Brand" >
+      </div>
+      <div class="form-group">
+        <label for="pwd">Creation Date:</label>
+        <input type="text" class="form-control" id="pwd"  formControlName="productCreationDate" placeholder="Enter Creation Date" >
+      </div>
+      <div class="form-group">
+        <label for="pwd">Updation Date:</label>
+        <input type="text" class="form-control" id="pwd" formControlName="productUpdationDate" placeholder="Enter Updation Date" name="pwd">
+      </div>
+      <button type="button" (click)="onSubmit()" class="btn btn-default">Next</button>
+    </form>
+  </div>

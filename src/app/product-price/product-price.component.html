@@ -1,0 +1,12 @@
+ <div class="container">
+    <h2>Price Form</h2>
+    <form [formGroup]="priceForm">
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="text" formControlName="price" class="form-control" placeholder="Enter product price">
+        </div>
+        <button type="button" (click)="onSubmit()" class="btn btn-default">Next</button>
+    </form>
+</div> 
+
+   

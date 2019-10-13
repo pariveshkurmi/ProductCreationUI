@@ -1,0 +1,12 @@
+ <div class="container">
+    <h2>Inventory Form</h2>
+    <form [formGroup]="inventoryForm">
+      <div class="form-group">
+        <label for="stockNumber">Stock Number:</label>
+        <input type="text" class="form-control" formControlName="stockNumber" placeholder="Enter Stock Number">
+      </div>
+     
+      
+      <button type="button" (click)="onSubmit()" class="btn btn-default">Next</button>
+    </form>
+  </div> 

@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Promotion Form</h2>
+  <form [formGroup]="promotionForm">
+    <div class="form-group">
+      <label for="code">Promotion Code:</label>
+      <input type="text" class="form-control" formControlName="promotionCode"  placeholder="Enter Promotion Code" >
+    </div>
+    <div class="form-group">
+      <label for="pwd">Expiry Status:</label>
+      <input type="text" class="form-control" formControlName="expiryStatus" id="pwd" placeholder="Enter Expiry Status" name="pwd">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Expiry Date:</label>
+      <input type="text" class="form-control" formControlName="expiryDate" placeholder="Enter Expiry Date" name="pwd">
+    </div>
+
+    <button type="button" (click)="onSubmit()" class="btn btn-default">Submit</button>
+  </form>
+</div>
